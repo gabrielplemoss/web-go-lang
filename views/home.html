@@ -1,0 +1,47 @@
+{{define "home"}}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+	<link rel="stylesheet" href="/assets/css//home.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="titulo">Contatos</h1>
+
+		<div class="table">
+			<table>
+				<tr class="table-titulo">
+					<th>nome</th>
+					<th>email</th>
+					<th>Telefone</th>
+					<th>ver mais</th>
+					<th>X</th>
+				</tr>
+				{{ range.}}
+				<tr>
+					<th>{{ .Nome}}</th>
+					<th>{{ .Email}}</th>
+					<th>{{ .Telefone}}</th>
+					<th><a class="ver-mais" href="/contato/{{.ID}}">ver mais</a></th>
+					<th><a class="deletar" href="/deletar/contato/{{.ID}}">X</a></th>
+				</tr>
+				{{ end }}		
+			</table>
+			<a href="/logout">
+				<button>Sair</button>
+			</a>
+			 <a href="/criar">
+				<button>Novo Contato</button>
+			 </a>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
+
+{{end}}

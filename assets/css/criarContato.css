@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+.container-formulario{
+   max-width: 700px;
+   width: 100%;
+   background-color: white;
+   padding: 25px 30px;
+   border-radius: 5px;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dados-contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-caixa{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width:  calc(100% / 2 - 20px);
+}
+
+input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px  solid #ccc;
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+button[type="submit"], .cancelar{
+    width: 140px;
+    height: 40px;
+    border: none;
+    font-style: italic;
+    font-size: larger;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]{            
+    margin-left: 15px;            
+    background: green;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.cancelar{            
+    background: red; 
+    float: right;
+    margin-left: 15px;
+}
+
+.criar-cancelar{
+    float: right;
+}
+
+input:disabled {
+    background: rgb(226 216 216);
+}

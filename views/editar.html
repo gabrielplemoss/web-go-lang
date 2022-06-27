@@ -1,0 +1,57 @@
+{{define "editar"}}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+    <link rel="stylesheet" href="/assets/css/criarContato.css">
+</head>
+<body>
+    <div class="container-formulario">
+        <h2 class="titulo">Contato</h2>
+        <form id="cadastrar-contato" action="/contato" method="post">            
+           <div class="dados-contato">
+                <div class="input-caixa">
+                    <label for="nome">nome</label>
+                    <input disabled type="text" name="nome" id="nome" value="{{.Nome}}">
+                </div>
+
+                <div class="input-caixa">
+                    <label for="apelido">apelido</label>
+                    <input disabled type="text" name="apelido" id="apelido" value="{{.Apelido}}">
+                </div>
+
+                <div class="input-caixa">
+                    <label for="site">site</label>
+                    <input disabled type="text" name="site" id="site" value="{{.Site}}">
+                </div>
+
+                <div class="input-caixa">
+                    <label for="email">email</label>
+                    <input disabled type="text" name="email" id="email" value="{{.Email}}">
+                </div>
+
+                <div class="input-caixa">
+                    <label for="telefone">telefone</label>
+                    <input disabled type="text" name="telefone" id="telefone" value="{{.Telefone}}">
+                </div>
+
+                <div class="input-caixa">
+                    <label for="endereco">endereco</label>
+                    <input disabled type="text" name="endereco" id="endereco" value="{{.Endereco}}">
+                </div>
+           </div>            
+            <div class="criar-cancelar">
+                <button class="editar" type="submit">editar</button>                
+            </div>            
+        </form>
+        <a href="/home">
+            <button class="cancelar">cancelar</button>
+        </a>
+    </div>
+
+    <script src="/assets/js/editar.js"></script>
+</body>
+</html>
+{{end}}

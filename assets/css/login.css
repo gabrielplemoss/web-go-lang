@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.titulo{
+    margin-bottom: 30px;
+}
+
+.small-container{
+    padding: 25px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.login-form form, .cadastrar-form form{
+    display: flex;
+    flex-direction: column  ;
+}
+
+.login-form form h2, .cadastrar-form form h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-form form input, .cadastrar-form form input{
+    margin-bottom: 10px;
+}
+
+.bt-login, .bt-cadastrar{
+    margin-top: 15px;
+}
+
+.divisao{
+    width: 1px;
+    background-color: black;
+    display: block;
+    margin: 0px 20px;
+}
+
+input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px  solid #ccc;
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+label{
+    margin: 15px 0px 8px 0px;
+    font-size: 20px;
+}

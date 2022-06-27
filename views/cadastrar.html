@@ -1,0 +1,57 @@
+{{define "cadastrar"}}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+    <link rel="stylesheet" href="/assets/css/criarContato.css">
+</head>
+<body>
+    <div class="container-formulario">
+        <h2 class="titulo">Cadastrar Contato</h2>
+        <form id="cadastrar-contato" action="/contato" method="post">            
+           <div class="dados-contato">
+                <div class="input-caixa">
+                    <label for="nome">nome</label>
+                    <input type="text" name="nome" id="nome">            
+                </div>
+
+                <div class="input-caixa">
+                    <label for="apelido">apelido</label>
+                    <input type="text" name="apelido" id="apelido">            
+                </div>
+
+                <div class="input-caixa">
+                    <label for="site">site pessoal</label>
+                    <input type="text" name="site" id="site">            
+                </div>
+
+                <div class="input-caixa">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email">            
+                </div>
+
+                <div class="input-caixa">
+                    <label for="telefone">telefone</label>
+                    <input type="text" name="telefone" id="telefone">            
+                </div>
+
+                <div class="input-caixa">
+                    <label for="endereco">endereco</label>
+                    <input type="text" name="endereco" id="endereco">           
+                </div>
+           </div>            
+            <div class="criar-cancelar">
+                <button type="submit">Cadastrar</button>                
+            </div>            
+        </form>
+        <a href="/home">
+            <button class="cancelar">cancelar</button>
+        </a>
+    </div>
+
+    <script src="/assets/js/cadastrar.js"></script>
+</body>
+</html>
+{{end}}

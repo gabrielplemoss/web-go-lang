@@ -1,0 +1,51 @@
+{{define "login"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/login.css">
+</head>
+<body>
+    <h1 class="titulo">Contato Online</h1>
+
+    <div class="small-container">
+        <div class="login-form">
+            <form id="logar-usuario" action="/login" method="post">
+                <h2>Login</h2>
+                <label for="login-user">email</label>
+                <input type="text" name="login-user" id="login-user">
+
+                <label for="login-password">senha</label>
+                <input type="password" name="login-password" id="login-password">
+
+                <input value="Submit" type="submit">
+            </form>
+        </div>
+
+        <div class="divisao"></div>
+
+        <div class="cadastrar-form">
+            <form id="cadastrar-usuario" action="/cadastrar"  method="post">
+                <h2>cadastrar</h2>
+                <label for="cadastro-user">usuario</label>
+                <input type="text" name="cadastro-user" id="cadastro-user">
+
+                <label for="cadastro-email">email</label>
+                <input type="text" name="cadastro-email" id="cadastro-email">
+
+                <label for="cadastro-password">senha</label>
+                <input type="password" name="cadastro-password" id="cadastro-password">
+                
+                <input value="cadastrar" type="submit">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/assets/js/login.js"></script>
+</body>
+</html>
+{{end}}
