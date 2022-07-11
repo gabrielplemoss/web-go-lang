@@ -22,5 +22,4 @@ func main() {
 
 	fmt.Println("rodadno 5000")
 	http.ListenAndServe(fmt.Sprintf(":%s", config.Porta), rotas)
-
 }
