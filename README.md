@@ -1,4 +1,4 @@
-# web-go-lang
+# web golang
 
 # diagrama Banco de dados
 ![1 1](https://user-images.githubusercontent.com/76095065/175876762-01b41121-d9d0-40a4-af07-5fe0c6628185.png)
